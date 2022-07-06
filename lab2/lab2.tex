@@ -1,0 +1,115 @@
+\documentclass{ctexart}
+\usepackage[utf8]{inputenc}
+\usepackage{listings} 
+\usepackage{xcolor}
+\lstset{
+  language=bash,  %代码语言使用的是matlab
+  frame=shadowbox, %把代码用带有阴影的框圈起来
+  rulesepcolor=\color{red!20!green!20!blue!20},%代码块边框为淡青色
+  keywordstyle=\color{blue!90}\bfseries, %代码关键字的颜色为蓝色，粗体
+  commentstyle=\color{red!10!green!70}\textit,    % 设置代码注释的颜色
+  showstringspaces=false,%不显示代码字符串中间的空格标记
+  numbers=left, % 显示行号
+  numberstyle=\tiny,    % 行号字体
+  stringstyle=\ttfamily, % 代码字符串的特殊格式
+  breaklines=true, %对过长的代码自动换行
+  extendedchars=false,  %解决代码跨页时，章节标题，页眉等汉字不显示的问题
+%   escapebegin=\begin{CJK*},escapeend=\end{CJK*},      % 代码中出现中文必须加上，否则报错
+  texcl=true}
+
+\title{\vspace{-2cm}编写shell脚本}
+\author{顾格非 \\ 3210103528}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\section{前言}
+\subsection{动机}
+
+\textbf{摘自MIT 6.null 导言： }
+作为计算机科学家，我们都知道计算机最擅长帮助我们完成重复性的工作。 但是我们却常常忘记这一点也适用于我们使用计算机的方式，而不仅仅是利用计算机程序去帮我们求解问题。 在从事与计算机相关的工作时，我们有很多触手可及的工具可以帮助我们更高效的解决问题。 但是我们中的大多数人实际上只利用了这些工具中的很少一部分，我们常常只是死记硬背一些如咒语般的命令， 或是当我们卡住的时候，盲目地从网上复制粘贴一些命令。
+\subsection{结缘}
+在准备六级考试的时候，为了提高我的听力，我选择了MIT-Missing-Semester,这门课旨在介绍一些上课不会教的工具，比如vim，Docker，Git…而shell编程就是其中之一。
+
+在王何宇老师的《数学软件》，我再一次接触了shell。十分感谢这门课程，下面是我的工作。
+\subsection{我的工作}
+之前接触了Python和C等高级语言，这里我尝试去理解和运用shell语言。
+\begin{enumerate}
+    \item 我学习了shell语法，简单掌握了循环，判断等结构，下面我会在\textbf{用shell语法实现冒泡排序}。
+    \item shell语法也有让一般编程费解的地方，\textbf{我复现了书上从函数中返回值的实验}，并展示了结果。
+\end{enumerate}
+
+\section{正文}
+\subsection{冒泡排序}
+冒泡排序的思想即每次排好一个数，限于篇幅我也不多介绍了吧。
+\subsection{脚本代码}
+
+
+\begin{verbatim}
+#!/bin/bash
+arr=(78 21 34 11 213 44)
+echo "你的数组是：${arr[*]}"
+for ((i=0;i<${#arr[*]};i++))
+do
+  for ((a=$i+1;a<${#arr[*]};a++))
+  do
+#如果前一个元素大于后一个元素，就交换位置，否则下一次循环
+  if [ ${arr[$i]} -gt ${arr[$a]} ];then
+    temp=$arr[$i]}
+    arr[$i]=${arr[$a]}
+    arr[$a]=$temp
+  fi
+  done
+done
+echo "你的数组升序排列为：${arr[*]}"
+\end{verbatim}
+
+\subsection{结果展示}
+将脚本命名为\verb|1.sh|，采用\verb|bash 1.sh|编译，结果如下：
+\begin{verbatim}
+    你的数组是：78 21 34 11 213 44
+    你的数组升序排列为：11 21 34 44 78 213
+\end{verbatim}
+\newpage
+\vspace{-0.2cm}
+\section{正文2}
+\subsection{简单介绍}
+这是书上从函数中返回一个值的实验。在shell头文件之后，我们定义了一个函数\verb|yes_or_no()|,在脚本开始执行时,函数被定义而不立即执行，而后面传入参数给这个函数，最终得到想要的结果。
+\subsection{脚本代码}
+这里换了一种好看的代码块！
+\begin{lstlisting}
+#!/bin/bash
+yes_or_no() {
+  echo "Is your name $* ?"
+  while true
+  do
+    echo -n "Enter yes or no: "
+    read x
+    case "$x" in
+      y | yes ) return 0;;
+      n | no ) return 1;;
+      * )    echo "Answer yes or no"
+    esac
+  done
+}
+
+echo "Original parameters are $*"
+if yes_or_no "$1"
+then 
+  echo "Hi $1, nice name"
+else
+  echo "Never mind"
+fi
+exit 0
+\end{lstlisting}
+
+\subsection{结果展示}
+这里我在终端中输入\verb|bash 2.sh frank|,（其中frank是像函数传入的参数作为名字）
+\begin{verbatim}
+Original parameters are frank
+Is your name frank ?
+Enter yes or no: yes
+Hi frank, nice name
+\end{verbatim}
+\end{document}

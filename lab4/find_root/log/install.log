@@ -1,0 +1,254 @@
+make  all-recursive
+make[1]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1'
+Making all in gsl
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/gsl'
+rm -f gsl*.h
+HEADERLIST="../gsl*.h ../*/gsl*.h"; \
+for h in $HEADERLIST; do \
+  BASENAME=`basename $h`; \
+  test -r $BASENAME || ln -s $h $BASENAME; \
+done
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/gsl'
+Making all in utils
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/utils'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/utils'
+Making all in sys
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/sys'
+Making all in test
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/test'
+Making all in err
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/err'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/err'
+Making all in bst
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/bst'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/bst'
+Making all in const
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/const'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/const'
+Making all in complex
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/complex'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/complex'
+Making all in cheb
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/cheb'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/cheb'
+Making all in block
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/block'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/block'
+Making all in vector
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/vector'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/vector'
+Making all in matrix
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/matrix'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/matrix'
+Making all in permutation
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/permutation'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/permutation'
+Making all in combination
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/combination'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/combination'
+Making all in multiset
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/multiset'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/multiset'
+Making all in sort
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/sort'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/sort'
+Making all in ieee-utils
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/ieee-utils'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/ieee-utils'
+Making all in cblas
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/cblas'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/cblas'
+Making all in blas
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/blas'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/blas'
+Making all in linalg
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/linalg'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/linalg'
+Making all in eigen
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/eigen'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/eigen'
+Making all in specfunc
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/specfunc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/specfunc'
+Making all in dht
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/dht'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/dht'
+Making all in qrng
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/qrng'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/qrng'
+Making all in rng
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/rng'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/rng'
+Making all in randist
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/randist'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/randist'
+Making all in fft
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/fft'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/fft'
+Making all in poly
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/poly'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/poly'
+Making all in fit
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/fit'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/fit'
+Making all in multifit
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/multifit'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/multifit'
+Making all in multifit_nlinear
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/multifit_nlinear'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/multifit_nlinear'
+Making all in multilarge
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/multilarge'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/multilarge'
+Making all in multilarge_nlinear
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/multilarge_nlinear'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/multilarge_nlinear'
+Making all in filter
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/filter'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/filter'
+Making all in movstat
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/movstat'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/movstat'
+Making all in rstat
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/rstat'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/rstat'
+Making all in statistics
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/statistics'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/statistics'
+Making all in siman
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/siman'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/siman'
+Making all in sum
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/sum'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/sum'
+Making all in integration
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/integration'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/integration'
+Making all in interpolation
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/interpolation'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/interpolation'
+Making all in histogram
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/histogram'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/histogram'
+Making all in ode-initval
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/ode-initval'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/ode-initval'
+Making all in ode-initval2
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/ode-initval2'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/ode-initval2'
+Making all in roots
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/roots'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/roots'
+Making all in multiroots
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/multiroots'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/multiroots'
+Making all in min
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/min'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/min'
+Making all in multimin
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/multimin'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/multimin'
+Making all in monte
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/monte'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/monte'
+Making all in ntuple
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/ntuple'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/ntuple'
+Making all in diff
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/diff'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/diff'
+Making all in deriv
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/deriv'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/deriv'
+Making all in cdf
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/cdf'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/cdf'
+Making all in wavelet
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/wavelet'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/wavelet'
+Making all in bspline
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/bspline'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/bspline'
+Making all in spblas
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/spblas'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/spblas'
+Making all in spmatrix
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/spmatrix'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/spmatrix'
+Making all in splinalg
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/splinalg'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/splinalg'
+Making all in doc
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/doc'
+Making all in .
+make[3]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/doc'
+Making all in examples
+make[3]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1/doc/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/doc/examples'
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1/doc'
+make[2]: Entering directory '/home/frank/Desktop/gsl/gsl-2.7.1'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1'
+make[1]: Leaving directory '/home/frank/Desktop/gsl/gsl-2.7.1'

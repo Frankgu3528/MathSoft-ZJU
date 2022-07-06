@@ -1,0 +1,19 @@
+\documentclass{ctexart}
+\usepackage[utf8]{inputenc}
+
+\title{使用说明}
+\author{顾格非}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{程序目的}
+该程序可以用来解非线性型方程。
+\section{工作原理}
+程序首先定义了最大次数$max\_iter$,然后用brent method对矩阵实现行列变换化到标准型，最后通过判断跳出循环。得到方程的解。
+
+布伦特方法(the method of Brent)是在二分法或试位法的基础上，借助二次插值方法进行加速，有利用反插值方法来简化计算而形成的一种方法。
+\end{document}
+
