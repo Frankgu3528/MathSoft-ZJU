@@ -5,3 +5,4 @@
 * lab4: gsl的安装和使用
 * project1: mandelbrot的探索
 * final: Julia集合的探索/非线性方程的求解
+### 满了散花~
